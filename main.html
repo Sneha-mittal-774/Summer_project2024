@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/149e3183b9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Cloud Computing</p>
+            <h1>
+            Hi, I'm <span>Sneha Mittal</span><br> from Jaipur
+            </h1>
+        </div>
+    </div>
+  </div>  
+  <!--------------about------------------------->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="myimage.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title"> About me</h1>
+                <p>I am a passionate and dedicated student specializing in cloud computing with a solid foundation in website development and Java programming. My academic journey and hands-on projects have equipped me with a versatile skill set, enabling me to approach technical challenges with confidence and creativity.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills"><ul>
+                    <li><span>Fundamentals of Cloud Computing</span><br>Understanding Cloud Concepts and models</li>
+                    <li><span>Java Programming</span><br>Java Standard edition and Java Development Tools</li>
+                    <li><span>Web Design</span><br>knwoledgeof Html,CSS and Javascript</li>
+                </ul></div>
+
+                <div class="tab-contents" id="experience"><ul>
+                    <li><span>Cloud Computing</span><br>Serverless Blog Application</li>
+                    <li><span>Web Design with php</span><br>Campus Recuritment Website</li>
+                    <li><span>Web Designing Experience</span><br>Personal Portfolio Website, Ecommerce Website</li>
+                </ul></div>
+
+                <div class="tab-contents" id="education"><ul>
+                    <li><span>10th With RBSE </span><br>Passed with 82%</li>
+                    <li><span>12th With RBSE</span><br>Passed with 85%</li>
+                    <li><span>BCA from Kanoria Pg College,Jaipur</span><br>Passed with 88%</li>
+                </ul></div>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+
+
+  <!---------------services------------->
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>
+                   Web design 
+                </h2>
+                <p>
+                  I have cover the fundamental concepts, tools and techniques. Some features are html&CSS, Responsive Web deisgn, UX Design, Javascript and Interactive Design, Design tools and software
+
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>
+                  Java Programming Fundamentals
+                </h2>
+                <p>
+                    I gain the strong foundation in Java Programming. The essentials concepts and skills required like basic syntax, object-oriented programming, and core java libraries.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>
+                    Cloud Computing Basics
+                </h2>
+                <p>
+                    I have the knwoledge of cloud computing concepts, focusing on the major cloud platforms like AWS, Azure and Google Cloud.
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-----------------------portfolio---------------->
+  
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="">
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <!---Contact ------------------------->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mittalsneha774@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8233002469</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mittalsneha774/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sneha-mittal-b2b967212/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type ="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea type="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright @ Sneha. Made with <i class="fa-solid fa-heart"></i> Html, Css and Javascript
+        </p>
+    </div>
+  </div>
+  
+  <script>
+    var tablinks =  document.getElementsByClassName("tab-links");
+    var tabcontents =  document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+     var sidemeu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemeu.style.right ="0";
+     }
+     function closemenu(){
+        sidemeu.style.right ="-200px";
+     }
+  </script>
+  <!--<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>-->
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNuC6qREYYneDInsxJnKiUuND4mEkfUcl9fB6kBmluXR4OcTxRTmKWjd1zVY5BPKnMZw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
